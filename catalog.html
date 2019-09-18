@@ -28,50 +28,71 @@
   </header>
   <main>
     <h1>Магазин готовых шаблонов</h1>
-    <!--тут блок, который не нужно размечать во втором задании-->
-    <div>
+    <h2 class="visually-hidden">Фильтр</h2>
+    <form>
+      <p>стоимость</p>
+      <p>от</p>
+      <p>до</p>
+    </form>
+    <section>
+      <h3>сортировать</h3>
+      <ul>
+        <li>по цене</li>
+        <li>по типу</li>
+        <li>по названию</li>
+      </ul>
+<img src="img/icon-down-dir.svg" alt="стрелка вниз">
+<img src="img/icon-up-dir.svg" alt="стрелка вверх">
+    </section>
+    
+      <form class="filter" method="GET" action="https://nerds.html">
+        <fieldset>
       <h2>сетка:</h2>
       <ul>
         <li>
-          <button></button>
-          <span>Адаптивная</span>
+          <input id="adaptiv" type="radio" name="grid">
+          <label for="adaptiv">Адаптивная</label>
         </li>
         <li>
-          <button></button>
-          <span>Фиксированная</span>
+          <input id="fixed" type="radio" name="grid">
+          <label for="fixed">Фиксированная</label>
         </li>
         <li>
-          <button></button>
-          <span>Резиновая</span>
+          <input id="rubber" type="radio" name="grid">
+          <label for="rubber">Резиновая</label>
         </li>
       </ul>
-    </div>
-    <div>
+      </fieldset>
+    
+    
+      <fieldset>
       <h2>особенности:</h2>
       <ul>
         <li>
-          <button></button>
-          <span>Слайдер</span>
+          <input id="slider" type="checkbox" name="слайдер" checked>
+          <label for="slider">Слайдер</label>
         </li>
         <li>
-          <button></button>
-          <span>Блок преимуществ</span>
+          <input id="benefits-blok" type="checkbox" name="блок преимуществ">
+          <label for="benefits-blok">Блок преимуществ</label>
         </li>
         <li>
-          <button></button>
-          <span>Новости</span>
+          <input id="news" type="checkbox" name="новости" checked>
+          <label for="news">Новости</label>
         </li>
         <li>
-          <button></button>
-          <span>Галерея</span>
+          <input id="gallery" type="checkbox" name="галерея">
+          <label for="gallery">Галерея</label>
         </li>
         <li>
-          <button></button>
-          <span>Корзина</span>
+          <input id="bag" type="checkbox" name="корзина">
+          <label for="bag">Корзина</label>
         </li>
       </ul>
-    </div>
+    
+    </fieldset>
     <a href="catalog.html">показать</a>
+  </form>
     <ul>
       <li><a href="sedona.html">
         <img src="img/img-sedona.jpg" alt="sedona">
