@@ -8,7 +8,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav aria-label="меню">
       <a href="catalog.html">
         <img src="img/nerds-logo.svg" alt="логотип нердс">
       </a>
@@ -21,7 +21,7 @@
       <img src="img/cart-icon.svg" alt="корзина">
       <ul>
         <li>
-          <button type="button">корзина</button>
+          <button type="button" aria-label="кнопка для входа в корзину">корзина</button>
         </li>
       </ul>
     </nav>
@@ -30,7 +30,8 @@
     <h1>Магазин готовых шаблонов</h1>
     <h2 class="visually-hidden">Фильтр</h2>
     <form>
-      <p>стоимость</p>
+      <h3>стоимость</h3>
+      <input type="range">
       <p>от</p>
       <p>до</p>
     </form>
@@ -47,7 +48,7 @@
     
       <form class="filter" method="GET" action="https://nerds.html">
         <fieldset>
-      <h2>сетка:</h2>
+      <legend>сетка:</legend>
       <ul>
         <li>
           <input id="adaptiv" type="radio" name="grid">
@@ -66,7 +67,7 @@
     
     
       <fieldset>
-      <h2>особенности:</h2>
+      <legend>особенности:</legend>
       <ul>
         <li>
           <input id="slider" type="checkbox" name="слайдер" checked>
@@ -167,9 +168,9 @@
   <footer>
     
       <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" alt="vk"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" alt="fb"></a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" alt="i"></a></li>
+        <li><a href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="vk"></a></li>
+        <li><a href="#" aria-label="ссылка на страницу нёрдс в фейсбуке"><img src="img/fb-icon.svg" alt="fb"></a></li>
+        <li><a href="#" aria-label="ссылка на страницу нёрдс в инстаграмм"><img src="img/insta-icon.svg" alt="i"></a></li>
       </ul>
     
     <p>Давайте дружить, это выгодно!</p>
@@ -178,8 +179,8 @@
 
   <section>
     <button type="button">корзина</button>
-    <!--здесь будет форма-->
-    <button type="button">закрыть</button>
+  
+    <button type="button"><img src="img/close-cross.svg"></button>
   </section>
 
 
