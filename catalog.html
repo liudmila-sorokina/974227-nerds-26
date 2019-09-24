@@ -12,7 +12,7 @@
       <a href="catalog.html">
         <img src="img/nerds-logo.svg" alt="логотип нердс">
       </a>
-      <ul class="breadcrumbs">
+      <ul class="menu">
         <li><a href="studio.html">студия</a></li>
         <li><a href="customers.html">клиенты</a></li>
         <li><a href="shop.html">магазин</a></li>
@@ -27,9 +27,62 @@
     </nav>
   </header>
   <main>
+    <section class="catalog">
     <h1>Магазин готовых шаблонов</h1>
+    <section class="catalog__filter">
     <h2 class="visually-hidden">Фильтр</h2>
-    <form>
+    <form class="filter" method="GET" action="https://nerds.html">
+        <fieldset>
+      <legend>сетка:</legend>
+      <ul>
+        <li>
+          <input id="adaptiv" type="radio" name="grid" value="a1">
+          <label for="adaptiv">Адаптивная</label>
+        </li>
+        <li>
+          <input id="fixed" type="radio" name="grid" value="a2">
+          <label for="fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input id="rubber" type="radio" name="grid" value="a3">
+          <label for="rubber">Резиновая</label>
+        </li>
+      </ul>
+      </fieldset>
+    
+    
+      <fieldset>
+      <legend>особенности:</legend>
+      <ul>
+        <li>
+          <input id="slider" type="checkbox" name="slider" checked>
+          <label for="slider">Слайдер</label>
+        </li>
+        <li>
+          <input id="benefits-blok" type="checkbox" name="advantages">
+          <label for="benefits-blok">Блок преимуществ</label>
+        </li>
+        <li>
+          <input id="news" type="checkbox" name="news" checked>
+          <label for="news">Новости</label>
+        </li>
+        <li>
+          <input id="gallery" type="checkbox" name="gallery">
+          <label for="gallery">Галерея</label>
+        </li>
+        <li>
+          <input id="bag" type="checkbox" name="basket">
+          <label for="bag">Корзина</label>
+        </li>
+      </ul>
+    
+    </fieldset>
+    <button type="submit">показать</button>
+    </form>
+  </section>
+  <section class="catalog__products">
+    <section>
+  <form>
       <h3>стоимость</h3>
       <input type="range">
       <p>от</p>
@@ -45,55 +98,8 @@
 <img src="img/icon-down-dir.svg" alt="стрелка вниз">
 <img src="img/icon-up-dir.svg" alt="стрелка вверх">
     </section>
-    
-      <form class="filter" method="GET" action="https://nerds.html">
-        <fieldset>
-      <legend>сетка:</legend>
-      <ul>
-        <li>
-          <input id="adaptiv" type="radio" name="grid">
-          <label for="adaptiv">Адаптивная</label>
-        </li>
-        <li>
-          <input id="fixed" type="radio" name="grid">
-          <label for="fixed">Фиксированная</label>
-        </li>
-        <li>
-          <input id="rubber" type="radio" name="grid">
-          <label for="rubber">Резиновая</label>
-        </li>
-      </ul>
-      </fieldset>
-    
-    
-      <fieldset>
-      <legend>особенности:</legend>
-      <ul>
-        <li>
-          <input id="slider" type="checkbox" name="слайдер" checked>
-          <label for="slider">Слайдер</label>
-        </li>
-        <li>
-          <input id="benefits-blok" type="checkbox" name="блок преимуществ">
-          <label for="benefits-blok">Блок преимуществ</label>
-        </li>
-        <li>
-          <input id="news" type="checkbox" name="новости" checked>
-          <label for="news">Новости</label>
-        </li>
-        <li>
-          <input id="gallery" type="checkbox" name="галерея">
-          <label for="gallery">Галерея</label>
-        </li>
-        <li>
-          <input id="bag" type="checkbox" name="корзина">
-          <label for="bag">Корзина</label>
-        </li>
-      </ul>
-    
-    </fieldset>
-    <a href="catalog.html">показать</a>
-  </form>
+  </section>
+  <section>
     <ul>
       <li><a href="sedona.html">
         <img src="img/img-sedona.jpg" alt="sedona">
@@ -144,6 +150,9 @@
         </section>
       </a></li>
     </ul>
+    </section>
+    </section>
+    </section>
     <section>
       <ul class="pagination-list">
         <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -168,9 +177,9 @@
   <footer>
     
       <ul>
-        <li><a href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="vk"></a></li>
-        <li><a href="#" aria-label="ссылка на страницу нёрдс в фейсбуке"><img src="img/fb-icon.svg" alt="fb"></a></li>
-        <li><a href="#" aria-label="ссылка на страницу нёрдс в инстаграмм"><img src="img/insta-icon.svg" alt="i"></a></li>
+        <li><a href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="иконка вконтакте"></a></li>
+        <li><a href="#" aria-label="ссылка на страницу нёрдс в фейсбуке"><img src="img/fb-icon.svg" alt="иконка фейсбук"></a></li>
+        <li><a href="#" aria-label="ссылка на страницу нёрдс в инстаграмм"><img src="img/insta-icon.svg" alt="иконка инстаграмм"></a></li>
       </ul>
     
     <p>Давайте дружить, это выгодно!</p>

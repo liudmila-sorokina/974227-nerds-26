@@ -10,7 +10,7 @@
     <a>
     <img src="img/nerds-logo.svg" alt="логотип нердс">
     </a>
-    <ul>
+    <ul class="menu">
       <li><a href="studio.html">студия</a></li>
       <li><a href="customers.html">клиенты</a></li>
       <li><a href="shop.html">магазин</a></li>
@@ -27,14 +27,24 @@
 </header>
 <main>
   <h1 class="visually-hidden">Дизайн-студия нердс</h1>
-  <section>
-    <h2 class="visually-hidden">Как мы работаем</h2>
+  <div class="slider">
+  <h2 class="visually-hidden">Как мы работаем</h2>
+  
+    <div class="slider__item">
     <p>Долго,дорого,скрупулезно.</p>
     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
     <a href="catalog.html" aria-label="узнать о нас больше"><button type="button">узнать больше</button></a>
-  </section>
-  <img src="img/slide1.jpg" alt="смартфоны">
+    </div>
+  
+  <div class="slider__pagination">
+  <img src="img/slide1.jpg" alt="изображение смартфонов">
+<button type="button"><img src="img/radio-on.svg"></button>
+<button type="button"><img src="img/radio-off.svg"></button>
+<button type="button"><img src="img/radio-off.svg"></button>
+  </div>
+  </div>
   <section>
+    
     <h2 class="visually-hidden">что мы разрабатываем</h2>
     <ul>
       <li>
@@ -57,7 +67,8 @@
           </li>
     </ul>
   </section>
-  <section>
+  <section class="about-us">
+  <section class="about-us__description">
     <h2 class="visually-hidden">О нас</h2>
     <p>Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -69,14 +80,15 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
   </section>
-  <section>
+  <section class="about-us__drowing">
     <img src="img/nerds-illustration.jpg" alt="логотип нердс">
     <h3>C 2004 года любим точность во всем</h3>
     <ul>
-      <li>146% уровень самоотдачи</li>
-      <li>100% соблюдение срока</li>
-      <li>50% минимальная предоплата</li>
+      <li><p>146%</p> <p>уровень самоотдачи</p></li>
+      <li><p>100%</p> <p>соблюдение срока</p></li>
+      <li><p>50%</p> <p>минимальная предоплата</p></li>
     </ul>
+  </section>
   </section>
   <section>
     <h2 class="visually-hidden">наши проекты</h2>
@@ -102,9 +114,9 @@
 <footer>
   
   <ul>
-    <li><a href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="vk"></a></li>
-    <li><a href="#" aria-label="ссылка на страницу нёрдс в фейсбук"><img src="img/fb-icon.svg" alt="fb"></a></li>
-    <li><a href="#" aria-label="ссылка на страницу нёрдс в инсаграмм"><img src="img/insta-icon.svg" alt="i"></a></li>
+    <li><a href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="иконка вконтакте"></a></li>
+    <li><a href="#" aria-label="ссылка на страницу нёрдс в фейсбук"><img src="img/fb-icon.svg" alt="иконка фейсбук"></a></li>
+    <li><a href="#" aria-label="ссылка на страницу нёрдс в инсаграмм"><img src="img/insta-icon.svg" alt="иконка инстаграмм"></a></li>
   </ul>
   
   <p>Давайте дружить, это выгодно!</p>
