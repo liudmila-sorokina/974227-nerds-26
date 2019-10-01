@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">">
 </head>
 
-<body>
+<body class="inner-page">
   <header>
     <nav aria-label="меню">
       <a href="catalog.html">
@@ -28,68 +31,69 @@
   </header>
   <main>
     <section class="catalog">
-    <h1>Магазин готовых шаблонов</h1>
+      <h1 class="visually-hidden">Выбор шаблонов</h1>
+    <p class="page-title">Магазин готовых шаблонов</p>
     <section class="catalog__filter">
     <h2 class="visually-hidden">Фильтр</h2>
     <form class="filter" method="GET" action="https://nerds.html">
         <fieldset>
-      <legend>сетка:</legend>
+      <legend class="filter-title">сетка:</legend>
       <ul>
         <li>
-          <input id="adaptiv" type="radio" name="grid" value="a1">
-          <label for="adaptiv">Адаптивная</label>
+          <input id="adaptiv" type="radio" name="grid" value="a1" checked>
+          <label for="adaptiv" class="filter__item">Адаптивная</label>
         </li>
         <li>
           <input id="fixed" type="radio" name="grid" value="a2">
-          <label for="fixed">Фиксированная</label>
+          <label for="fixed" class="filter__item">Фиксированная</label>
         </li>
         <li>
           <input id="rubber" type="radio" name="grid" value="a3">
-          <label for="rubber">Резиновая</label>
+          <label for="rubber" class="filter__item">Резиновая</label>
         </li>
       </ul>
       </fieldset>
     
     
       <fieldset>
-      <legend>особенности:</legend>
+      <legend class="filter-title">особенности:</legend>
       <ul>
         <li>
           <input id="slider" type="checkbox" name="slider" checked>
-          <label for="slider">Слайдер</label>
+          <label for="slider" class="filter__item">Слайдер</label>
         </li>
         <li>
           <input id="benefits-blok" type="checkbox" name="advantages">
-          <label for="benefits-blok">Блок преимуществ</label>
+          <label for="benefits-blok" class="filter__item">Блок преимуществ</label>
         </li>
         <li>
           <input id="news" type="checkbox" name="news" checked>
-          <label for="news">Новости</label>
+          <label for="news" class="filter__item">Новости</label>
         </li>
         <li>
           <input id="gallery" type="checkbox" name="gallery">
-          <label for="gallery">Галерея</label>
+          <label for="gallery" class="filter__item">Галерея</label>
         </li>
         <li>
           <input id="bag" type="checkbox" name="basket">
-          <label for="bag">Корзина</label>
+          <label for="bag" class="filter__item">Корзина</label>
         </li>
       </ul>
     
     </fieldset>
-    <button type="submit">показать</button>
+    <button class="filter-button" type="submit">показать</button>
     </form>
   </section>
   <section class="catalog__products">
     <section>
   <form>
-      <h3>стоимость</h3>
+      <h3 class="filter-title filter-subtitle">стоимость</h3>
       <input type="range">
       <p>от</p>
       <p>до</p>
     </form>
     <section>
-      <h3>сортировать</h3>
+      <h3 class="filter-title filter-subtitle">сортировать</h3>
       <ul>
         <li><button tabindex="1">по цене</button></li>
         <li><button tabindex="2">по типу</button></li>
@@ -100,53 +104,53 @@
     </section>
   </section>
   <section>
-    <ul>
+    <ul class="examples">
       <li><a href="sedona.html">
         <img src="img/img-sedona.jpg" alt="sedona">
         <section>
-        <h3>sedona</h3>
-        <p>информационный сайт для туристов</p>
+        <h3 class="examples__item">sedona</h3>
+        <p classs="examples__text">информационный сайт для туристов</p>
         <b>9900</b>
         </section>
       </a></li>
       <li><a href="pink.html">
         <img src="img/img-pink.jpg" alt="pink">
         <section>
-        <h3>pink</h3>
-        <p>Интернет магазин девайсов</p>
-        <b>9800</b>
+        <h3 class="examples__item">pink</h3>
+        <p classs="examples__text">Интернет магазин девайсов</p>
+        <b class="examples__prise">9800</b>
         </section>
       </a></li>
       <li><a href="borodinski.html">
         <img src="img/img-barbershop.jpg" alt="borodinski">
         <section>
-        <h3>borodinski</h3>
-        <p>современный барбершоп</p>
-        <b>9700</b>
+        <h3 class="examples__item">borodinski</h3>
+        <p classs="examples__text">современный барбершоп</p>
+        <b class="examples__prise">9700</b>
         </section>
       </a></li>
       <li><a href="mishka.html">
         <img src="img/img-mishka.jpg" alt="mishka">
         <section>
-        <h3>mishka</h3>
-        <p>магазин товаров ручной работы</p>
-        <b>9600</b>
+        <h3 class="examples__item">mishka</h3>
+        <p classs="examples__text">магазин товаров ручной работы</p>
+        <b class="examples__prise">9600</b>
         </section>
       </a></li>
       <li><a href="A+.html">
         <img src="img/img-aplus.jpg" alt="A+">
         <section>
-        <h3>A+</h3>
-        <p>онлайн курсы</p>
-        <b>9500</b>
+        <h3 class="examples__item">A+</h3>
+        <p classs="examples__text">онлайн курсы</p>
+        <b class="examples__prise">9500</b>
         </section>
       </a></li>
       <li><a href="kvast.html">
         <img src="img/img-kvast.jpg" alt="кваст">
         <section>
-        <h3>кваст</h3>
-        <p>магазин крафтового кваса</p>
-        <b>9400</b>
+        <h3 class="examples__item">кваст</h3>
+        <p classs="examples__text">магазин крафтового кваса</p>
+        <b class="examples__prise">9400</b>
         </section>
       </a></li>
     </ul>
@@ -162,7 +166,7 @@
       </ul>
     </section>
     <section>
-      <h2>контакты</h2>
+      <h2 class="visually-hidden">контакты</h2>
       <img src="img/Слой 2.jpg" alt="карта">
       <img src="img/map-marker.png" alt="логотип">
       <div>
@@ -182,8 +186,8 @@
         <li><a href="#" aria-label="ссылка на страницу нёрдс в инстаграмм"><img src="img/insta-icon.svg" alt="иконка инстаграмм"></a></li>
       </ul>
     
-    <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="make-friends">Давайте дружить, это выгодно!</p>
+    <p class="make-friends__subtitle">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
 
   <section>

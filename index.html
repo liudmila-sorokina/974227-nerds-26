@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">">
   </head>
-  <body>
+  <body class="main-page">
 <header>
   <nav>
     <a>
@@ -31,9 +34,9 @@
   <h2 class="visually-hidden">Как мы работаем</h2>
   
     <div class="slider__item">
-    <p>Долго,дорого,скрупулезно.</p>
-    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-    <a href="catalog.html" aria-label="узнать о нас больше"><button type="button">узнать больше</button></a>
+    <p class="slogan">Долго,дорого,скрупулезно.</p>
+    <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+    <a href="catalog.html" aria-label="узнать о нас больше"><button type="button" class="slider-button">узнать больше</button></a>
     </div>
   
   <div class="slider__pagination">
@@ -46,47 +49,47 @@
   <section>
     
     <h2 class="visually-hidden">что мы разрабатываем</h2>
-    <ul>
+    <ul class="services">
       <li>
         <img src="img/illustration-1.jpg" alt="компьютер">
-        <h3>веб-сайты</h3>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="catalog.html">заказать</a>
+        <h3 class="services__title">веб-сайты</h3>
+        <p class="services__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <a class="services__button red-button" href="catalog.html">заказать</a>
       </li>
       <li>
           <img src="img/illustration-2.jpg" alt="смартфон">
-          <h3>приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="catalog.html">заказать</a>
+          <h3 class="services__title">приложения</h3>
+          <p class="services__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="services__button green-button" href="catalog.html">заказать</a>
         </li>
         <li>
             <img src="img/illustration-3.jpg" alt="планшет">
-            <h3>презентации</h3>
-            <p>Вы даже не подозреваете,насколько вы изумительны!</p>
-            <a href="catalog.html">заказать</a>
+            <h3 class="services__title">презентации</h3>
+            <p class="services__text">Вы даже не подозреваете,насколько вы изумительны!</p>
+            <a class="services__button yellow-button" href="catalog.html">заказать</a>
           </li>
     </ul>
   </section>
   <section class="about-us">
   <section class="about-us__description">
     <h2 class="visually-hidden">О нас</h2>
-    <p>Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
-    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+    <p class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
+    <p class="about-us__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильный приложений для OS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <h3 class="about-us__subtitle">Выполняем заказы на разработку:</h3>
+        <ul class="about-us__list">
+          <li class="about-us__list-item">Веб-сайтов любой сложности</li>
+          <li class="about-us__list-item">Мобильный приложений для OS и Android</li>
+          <li class="about-us__list-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
   </section>
   <section class="about-us__drowing">
     <img src="img/nerds-illustration.jpg" alt="логотип нердс">
-    <h3>C 2004 года любим точность во всем</h3>
+    <h3 class="about-us__subtitle">C 2004 года любим точность во всем</h3>
     <ul>
-      <li><p>146%</p> <p>уровень самоотдачи</p></li>
-      <li><p>100%</p> <p>соблюдение срока</p></li>
-      <li><p>50%</p> <p>минимальная предоплата</p></li>
+      <li><p class="about-us__percent">146%</p> <p class="about-us__percent-text">уровень самоотдачи</p></li>
+      <li><p class="about-us__percent">100%</p> <p class="about-us__percent-text">соблюдение срока</p></li>
+      <li><p class="about-us__percent">50%</p> <p class="about-us__percent-text">минимальная предоплата</p></li>
     </ul>
   </section>
   </section>
@@ -98,7 +101,7 @@
     <img src="img/logo-4.png" alt="mishka">
   </section>
   <section>
-    <h2>контакты</h2>
+    <h2 class="visually-hidden">контакты</h2>
     <img src="img/Слой 2.jpg" alt="карта">
     <img src="img/map-marker.png" alt="логотип">
     <div>
@@ -119,8 +122,8 @@
     <li><a href="#" aria-label="ссылка на страницу нёрдс в инсаграмм"><img src="img/insta-icon.svg" alt="иконка инстаграмм"></a></li>
   </ul>
   
-  <p>Давайте дружить, это выгодно!</p>
-  <p>Скидка 10% для друзей из социальных сетей.</p>
+  <p class="make-friends">Давайте дружить, это выгодно!</p>
+  <p class="make-friends__subtitle">Скидка 10% для друзей из социальных сетей.</p>
 </footer>
 
 <section>

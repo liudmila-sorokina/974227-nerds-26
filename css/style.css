@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: #eeeeee;
+}
+
+.visually-hidden {
+    display: none;
+}
+.menu {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+.slider {
+    background-color: #eeeeee;
+}
+.slogan {
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+.slider-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+
+    background-color: #eeeeee;
+}
+.slider-button {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 16px 60px 16px 60px;
+
+    background-color: #fb565a;
+}
+.inner-page {
+    color: #000000;
+
+    background-color: #ffffff;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+.services__title {
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.services__text {
+    font-size: 16px;
+    line-height: 24px;
+}
+.services__button {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 18px 40px 18px 40px;
+}
+.red-button {
+    background-color: #fb565a;
+}
+.green-button {
+    background-color: #00ca74;
+}
+.yellow-button {
+    background-color: #efc84a;
+}
+.about-us__title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+    font-weight: 500;
+}
+.about-us__text {
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-us__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.about-us__list-item {
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-us__percent {
+    font-size: 45px;
+    line-height: 10px;
+    color: #000000;
+}
+.about-us__percent-text {
+    font-size: 16px;
+    line-height: 18px;
+}
+.make-friends {
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: 500;
+}
+.make-friends__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+}
+.filter-title {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+.filter__item {
+    font-size: 16px;
+    line-height: 20px;
+}
+.filter-button {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+
+    background-color: #eeeeee;
+
+    padding: 17px 90px 17px 90px;
+}
+.filter-subtitle {
+    font-weight: 400;
+}
+.examples__item {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+
+    text-transform: uppercase;
+
+}
+.examples__text {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+.examples__prise {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 16px 60px 16px 60px;
+
+    background-color: #fb565a;
+}
