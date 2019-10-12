@@ -10,7 +10,7 @@
   <body class="main-page">
 <header>
   <nav>
-    <a>
+    <a class="logo-nerds">
     <img src="img/nerds-logo.svg" alt="логотип нердс">
     </a>
     <ul class="menu">
@@ -20,10 +20,10 @@
       <li><a href="contacts.html" class="menu__item">контакты</a></li>
     </ul>
     
-    <ul>
+    <ul class="menu">
       <li>
         <img src="img/cart-icon.svg" alt="корзина">
-        <a href="bag.html">корзина</a>
+        <a href="bag.html" class="menu__item">корзина</a>
       </li>
     </ul>
   </nav>
@@ -87,29 +87,29 @@
     <img src="img/nerds-illustration.jpg" alt="логотип нердс">
     <h3 class="about-us__subtitle">C 2004 года любим точность во всем</h3>
     <ul>
-      <li><p class="about-us__percent">146%</p> <p class="about-us__percent-text">уровень самоотдачи</p></li>
-      <li><p class="about-us__percent">100%</p> <p class="about-us__percent-text">соблюдение срока</p></li>
-      <li><p class="about-us__percent">50%</p> <p class="about-us__percent-text">минимальная предоплата</p></li>
+      <li><p class="about-us__percent">146<span class="about-us__percent-sign">%</span></p> <p class="about-us__percent-text">уровень самоотдачи</p></li>
+      <li><p class="about-us__percent">100<span class="about-us__percent-sign">%</span></p> <p class="about-us__percent-text">соблюдение срока</p></li>
+      <li><p class="about-us__percent">50<span class="about-us__percent-sign">%</span></p> <p class="about-us__percent-text">минимальная предоплата</p></li>
     </ul>
   </section>
   </section>
   <section>
     <h2 class="visually-hidden">наши проекты</h2>
-    <img src="img/logo-1.png" alt="htmlacademy">
-    <img src="img/logo-2.png" alt="borodinski">
-    <img src="img/logo-3.png" alt="pink">
-    <img src="img/logo-4.png" alt="mishka">
+    <img class="logo-project" src="img/logo-1.png" alt="htmlacademy">
+    <img class="logo-project" src="img/logo-2.png" alt="borodinski">
+    <img class="logo-project" src="img/logo-3.png" alt="pink">
+    <img class="logo-project" src="img/logo-4.png" alt="mishka">
   </section>
   <section>
     <h2 class="visually-hidden">контакты</h2>
     <img src="img/Слой 2.jpg" alt="карта">
     <img src="img/map-marker.png" alt="логотип">
-    <div>
-      <p>NЁRDS DESIGN STUDIO<br>
-      191186, Санкт-Петербург,<br> 
+    <div class="address">
+      <h3 class="address__subtitle">NЁRDS DESIGN STUDIO</h3>
+      <p class="address__text">191186, Санкт-Петербург,<br> 
       ул. Б. Конюшенная, д. 19/8<br>
       тел. +7 (812) 275-75-75</p>
-      <button type="button">напишите нам</button>
+      <button class="slider-button">напишите нам</button>
     </div>
   </section>
 
@@ -117,9 +117,9 @@
 <footer>
   
   <ul>
-    <li><a href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="иконка вконтакте"></a></li>
-    <li><a href="#" aria-label="ссылка на страницу нёрдс в фейсбук"><img src="img/fb-icon.svg" alt="иконка фейсбук"></a></li>
-    <li><a href="#" aria-label="ссылка на страницу нёрдс в инсаграмм"><img src="img/insta-icon.svg" alt="иконка инстаграмм"></a></li>
+    <li><a class="social-network" href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="иконка вконтакте"></a></li>
+    <li><a class="social-network" href="#" aria-label="ссылка на страницу нёрдс в фейсбук"><img src="img/fb-icon.svg" alt="иконка фейсбук"></a></li>
+    <li><a class="social-network" href="#" aria-label="ссылка на страницу нёрдс в инсаграмм"><img src="img/insta-icon.svg" alt="иконка инстаграмм"></a></li>
   </ul>
   
   <p class="make-friends">Давайте дружить, это выгодно!</p>
@@ -127,11 +127,8 @@
 </footer>
 
 <section>
-  <button type="button"><img src="img/close-cross.svg"></button>
+  <button class="close-cross" type="button"><img src="img/close-cross.svg"></button>
 </section>
-
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>
 </html>
