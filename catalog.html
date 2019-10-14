@@ -44,11 +44,11 @@
         <form class="filter" method="GET" action="https://nerds.html">
           <fieldset>
             <legend class="filter-title">стоимость</legend>
-            <input type="range">
-            <label for="from" class='filter-text'>от</label>
+            <div class="range"><input type="range"></div>
+            <label for="from" class='filter-text-word'>от</label>
             <input id="from" class='filter-text' type="input" name="from" value="0">
 
-            <label for="to" class='filter-text'>до</label>
+            <label for="to" class='filter-text-word'>до</label>
             <input id="to" class='filter-text' vtype="input" name="to" value="15000">
 
           </fieldset>
@@ -122,7 +122,7 @@
                 <section class="information-block">
                   <h3 class="examples__item">sedona</h3>
                   <p class="examples__text">информационный сайт для туристов</p>
-                  <button class="examples__prise">9900</button>
+                  <button class="examples__prise">9900 руб.</button>
                 </section>
               </a></li>
             <li><a href="pink.html">
@@ -131,7 +131,7 @@
                 <section class="information-block">
                   <h3 class="examples__item">pink</h3>
                   <p classs="examples__text">Интернет магазин девайсов</p>
-                  <button class="examples__prise">9800</button>
+                  <button class="examples__prise">9800 руб.</button>
                 </section>
               </a></li>
             <li><a href="borodinski.html">
@@ -140,7 +140,7 @@
                 <section class="information-block">
                   <h3 class="examples__item">borodinski</h3>
                   <p classs="examples__text">современный барбершоп</p>
-                  <button class="examples__prise">9700</button>
+                  <button class="examples__prise">9700 руб.</button>
                 </section>
               </a></li>
             <li><a href="mishka.html">
@@ -149,7 +149,7 @@
                 <section class="information-block">
                   <h3 class="examples__item">mishka</h3>
                   <p classs="examples__text">магазин товаров ручной работы</p>
-                  <button class="examples__prise">9600</button>
+                  <button class="examples__prise">9600 руб.</button>
                 </section>
               </a></li>
             <li><a href="A+.html">
@@ -158,7 +158,7 @@
                 <section class="information-block">
                   <h3 class="examples__item">A+</h3>
                   <p classs="examples__text">онлайн курсы</p>
-                  <button class="examples__prise">9500</button>
+                  <button class="examples__prise">9500 руб.</button>
                 </section>
               </a></li>
             <li><a href="kvast.html">
@@ -167,7 +167,7 @@
                 <section class="information-block">
                   <h3 class="examples__item">кваст</h3>
                   <p classs="examples__text">магазин крафтового кваса</p>
-                  <button class="examples__prise">9400</button>
+                  <button class="examples__prise">9400 руб.</button>
                 </section>
               </a></li>
           </ul>
@@ -194,6 +194,16 @@
         <button class="slider-button">напишите нам</button>
       </div>
     </section>
+    <form action="https://nerds.ru" method="get" class="personal-data">
+      <h3 class="about-us__title">Напишите нам</h3>
+      <input class="input-form invalid" id="user-name" placeholder="Имя Фамилия" type="text" name="username">
+      <label class="for-form" for="user-name">Ваше имя</label>
+      <input class="input-form" id="user-mail" placeholder="email.example.com" type="text" name="mail">
+      <label class="for-form" for="user-mail">Ваш email</label>
+      <input class="input-form" id="user-text" placeholder="В свободной форме" type="text" name="text-mail">
+      <label class="for-form" for="user-text">Текст сообщения</label>
+      <button type="submit" class="slider-button">отправить</button>
+    </form>
   </main>
   <footer>
 
