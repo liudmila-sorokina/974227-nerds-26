@@ -13,10 +13,12 @@
 
 <body class="inner-page">
   <header>
-    <nav aria-label="меню">
+    <nav aria-label="меню" class="main-header">
+
       <a class="logo-nerds" href="catalog.html">
         <img src="img/nerds-logo.svg" alt="логотип нердс">
       </a>
+
       <ul class="menu">
         <li><a href="studio.html" class="menu__item">студия</a></li>
         <li><a href="customers.html" class="menu__item">клиенты</a></li>
@@ -25,8 +27,10 @@
       </ul>
 
       <ul class="menu">
-        <li>
+        <li class="i-dont-know">
           <img src="img/cart-icon.svg" alt="корзина">
+        </li>
+        <li>
         <a href="bag.html" class="menu__item">корзина</a>
         </li>
       </ul>
@@ -38,7 +42,9 @@
       <h1 class="visually-hidden">Выбор шаблонов</h1>
 
       <p class="page-title">Магазин готовых шаблонов</p>
+      <div class="catalog-columns">
       <section class="catalog__filter">
+        
         <h2 class="visually-hidden">Фильтр</h2>
 
         <form class="filter" method="GET" action="https://nerds.html">
@@ -53,6 +59,7 @@
 
           </fieldset>
           <fieldset>
+          
             <legend class="filter-title">сетка:</legend>
             <ul>
               <li>
@@ -68,10 +75,12 @@
                 <label for="rubber" class="filter__item">Резиновая</label>
               </li>
             </ul>
+            
           </fieldset>
 
 
           <fieldset>
+            
             <legend class="filter-title">особенности:</legend>
             <ul>
               <li>
@@ -117,8 +126,10 @@
         <section class="catalog__items">
           <ul class="examples">
             <li><a href="sedona.html">
+              <div class="two-img">
               <img class="browser-png" src="img/browser.png">
                 <img src="img/img-sedona.jpg" alt="sedona">
+                </div>
                 <section class="information-block">
                   <h3 class="examples__item">sedona</h3>
                   <p class="examples__text">информационный сайт для туристов</p>
@@ -126,8 +137,10 @@
                 </section>
               </a></li>
             <li><a href="pink.html">
+                <div class="two-img">
                 <img class="browser-png" src="img/browser.png">
                 <img src="img/img-pink.jpg" alt="pink">
+                </div>
                 <section class="information-block">
                   <h3 class="examples__item">pink</h3>
                   <p classs="examples__text">Интернет магазин девайсов</p>
@@ -135,8 +148,10 @@
                 </section>
               </a></li>
             <li><a href="borodinski.html">
+                <div class="two-img">
                 <img class="browser-png" src="img/browser.png">
                 <img src="img/img-barbershop.jpg" alt="borodinski">
+                </div>
                 <section class="information-block">
                   <h3 class="examples__item">borodinski</h3>
                   <p classs="examples__text">современный барбершоп</p>
@@ -144,8 +159,10 @@
                 </section>
               </a></li>
             <li><a href="mishka.html">
+                <div class="two-img">
                 <img class="browser-png" src="img/browser.png">
                 <img src="img/img-mishka.jpg" alt="mishka">
+                </div>
                 <section class="information-block">
                   <h3 class="examples__item">mishka</h3>
                   <p classs="examples__text">магазин товаров ручной работы</p>
@@ -153,8 +170,10 @@
                 </section>
               </a></li>
             <li><a href="A+.html">
+                <div class="two-img">
                 <img class="browser-png" src="img/browser.png">
                 <img src="img/img-aplus.jpg" alt="A+">
+                </div>
                 <section class="information-block">
                   <h3 class="examples__item">A+</h3>
                   <p classs="examples__text">онлайн курсы</p>
@@ -162,8 +181,10 @@
                 </section>
               </a></li>
             <li><a href="kvast.html">
+                <div class="two-img">
                 <img class="browser-png" src="img/browser.png">
                 <img src="img/img-kvast.jpg" alt="кваст">
+                </div>
                 <section class="information-block">
                   <h3 class="examples__item">кваст</h3>
                   <p classs="examples__text">магазин крафтового кваса</p>
@@ -173,6 +194,7 @@
           </ul>
         </section>
       </section>
+    </div>
     </section>
     <section>
       <ul class="pagination-list">
@@ -206,15 +228,17 @@
     </form>
   </main>
   <footer>
-
-    <ul>
+<div class="footer-main">
+    <ul class="footer-social">
       <li><a class="social-network" href="#" aria-label="ссылка на страницу нёрдс во в контакте"><img src="img/vk-icon.svg" alt="иконка вконтакте"></a></li>
       <li><a class="social-network" href="#" aria-label="ссылка на страницу нёрдс в фейсбук"><img src="img/fb-icon.svg" alt="иконка фейсбук"></a></li>
       <li><a class="social-network" href="#" aria-label="ссылка на страницу нёрдс в инсаграмм"><img src="img/insta-icon.svg" alt="иконка инстаграмм"></a></li>
     </ul>
-
+<div class="footer-text">
     <p class="make-friends">Давайте дружить, это выгодно!</p>
     <p class="make-friends__subtitle">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    </div>
   </footer>
 
   <section>
