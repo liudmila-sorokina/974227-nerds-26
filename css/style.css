@@ -14,10 +14,15 @@ body {
     outline: none;
 }
 
+h3, p {
+    margin: 0;
+}
+
 button {
     border: none;
     box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
     border-radius: 5px;
+    
 }
 
 a {
@@ -33,6 +38,10 @@ header {
 ul {
     list-style: none;
     padding-left: 0;
+}
+
+fieldset {
+    border: none;
 }
 
 .logo-nerds {
@@ -64,6 +73,7 @@ ul {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+    padding-top: 55px;
 }
 
 .menu {
@@ -98,6 +108,19 @@ ul {
     border-bottom: 2px solid #fb565a;
 }
 
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider__pagination {
+    width: 695px;
+    height: 410px;
+    background-color: #eeeeee;
+    position: relative;
+}
+
 .slider-container {
     background-color: #eeeeee;
     padding: 1px;
@@ -114,6 +137,8 @@ ul {
     font-size: 16px;
     line-height: 24px;
     color: #283136;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .slider-button {
@@ -477,6 +502,11 @@ ul {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .examples__prise {
@@ -485,6 +515,7 @@ ul {
     color: #ffffff;
     padding: 16px 60px 16px 60px;
     background-color: #fb565a;
+    text-transform: uppercase;
 }
 
 .examples__prise:hover {
@@ -499,6 +530,7 @@ ul {
 .catalog__filter {
     display: flex;
     width: 270px;
+    margin-top: 18px;
 }
 
 fieldset ul {
@@ -664,8 +696,11 @@ fieldset ul {
 
 .information-block {
     width: 360px;
-    height: 231px;
+    height: 163px;
     background-color: #e1e1e1;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 43px;
 }
 
 .address {
@@ -730,7 +765,7 @@ input {
 .main-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 0px;
 }
 
@@ -787,10 +822,37 @@ input {
 }
 
 .slider__item {
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
 .catalog-columns {
     display: flex;
     justify-content: space-between;
+}
+
+.round-button {
+    box-shadow: none;
+    border-radius: 50px;
+}
+
+.img-phons {
+    background-color: #eeeeee;
+}
+
+.product-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.catalog__filters {
+    display: flex;
+    flex-direction: row;
+    padding-left: 320px;
+}
+
+.round-buttons {
+    position: absolute;
+    left: 104px;
+    bottom: 94px;
 }
