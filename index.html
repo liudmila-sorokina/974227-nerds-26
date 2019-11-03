@@ -45,7 +45,8 @@
             <div class="slider__item-container">
               <p class="slogan">Долго, дорого, скрупулезно.</p>
               <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a href="catalog.html" aria-label="узнать о нас больше"><button type="button" class="slider-button">узнать
+              <a href="catalog.html" aria-label="узнать о нас больше"><button type="button"
+                  class="slider-button all-button">узнать
                   больше</button></a>
             </div>
             <img src="img/slide1.png" alt="изображение смартфонов" class="img-phons">
@@ -54,9 +55,10 @@
 
 
           <div class="round-buttons">
-            <button type="button" class="round-button"><img src="img/radio-on.svg"></button>
-            <button type="button" class="round-button"><img src="img/radio-off.svg"></button>
-            <button type="button" class="round-button"><img src="img/radio-off.svg"></button>
+            <button type="button" class="round-button all-button round-button_active"
+              aria-label="Переключиться на слайд1"></button>
+            <button type="button" class="round-button all-button" aria-label="Переключиться на слайд2"></button>
+            <button type="button" class="round-button all-button" aria-label="Переключиться на слайд3"></button>
 
           </div>
         </div>
@@ -104,15 +106,15 @@
         <img src="img/nerds-illustration.jpg" alt="логотип нердс">
         <h3 class="about-us__subtitle">C 2004 года любим точность во всем:</h3>
         <ul class="about-us-promises">
-          <li>
+          <li class="about-us__list-item-percent">
             <p class="about-us__percent">146<span class="about-us__percent-sign">%</span></p>
             <p class="about-us__percent-text">уровень самоотдачи</p>
           </li>
-          <li>
+          <li class="about-us__list-item-percent">
             <p class="about-us__percent">100<span class="about-us__percent-sign">%</span></p>
             <p class="about-us__percent-text">соблюдение срока</p>
           </li>
-          <li>
+          <li class="about-us__list-item-percent">
             <p class="about-us__percent">50<span class="about-us__percent-sign">%</span></p>
             <p class="about-us__percent-text">минимальная предоплата</p>
           </li>
@@ -121,33 +123,38 @@
     </section>
     <section class="logo-project-pictures container">
       <h2 class="visually-hidden">наши проекты</h2>
-      <img class="logo-project academy" src="img/logo-1.png" alt="htmlacademy">
-      <img class="logo-project barbershop" src="img/logo-2.png" alt="borodinski">
-      <img class="logo-project glasses" src="img/logo-3.png" alt="pink">
-      <img class="logo-project bear" src="img/logo-4.png" alt="mishka">
+      <a class="logo-project academy"><img src="img/logo-1.png" alt="htmlacademy"></a>
+      <a class="logo-project barbershop"><img src="img/logo-2.png" alt="borodinski"></a>
+      <a class="logo-project glasses"><img src="img/logo-3.png" alt="pink"></a>
+      <a class="logo-project bear"><img src="img/logo-4.png" alt="mishka"></a>
     </section>
     <section class="container map-container">
       <h2 class="visually-hidden">контакты</h2>
-      <img src="img/map.jpg" alt="карта">
+      <img class="map-picture" src="img/map.jpg" alt="карта">
       <img src="img/map-marker.png" alt="логотип" class="map-marker">
       <div class="address">
         <h3 class="address__subtitle">NЁRDS DESIGN STUDIO</h3>
         <p class="address__text">191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
         <p class="address-phone">тел. +7 (812) 275-75-75</p>
-        <button class="slider-button address-button">напишите нам</button>
+        <button class="slider-button address-button all-button">напишите нам</button>
       </div>
     </section>
+
     <form action="https://nerds.ru" method="get" class="personal-data">
-      <h3 class="about-us__title">Напишите нам</h3>
-      <input class="input-form invalid" id="user-name" placeholder="Имя Фамилия" type="text" name="username">
-      <label class="for-form" for="user-name">Ваше имя</label>
-      <input class="input-form" id="user-mail" placeholder="email.example.com" type="text" name="mail">
-      <label class="for-form" for="user-mail">Ваш email</label>
-      <input class="input-form" id="user-text" placeholder="В свободной форме" type="text" name="text-mail">
-      <label class="for-form" for="user-text">Текст сообщения</label>
-      <button type="submit" class="slider-button">отправить</button>
+      <section class="nerds-form">
+        <h3 class="about-us__title">Напишите нам</h3>
+        <label class="for-form" for="user-name">Ваше имя:</label>
+        <input class="input-form invalid" id="user-name" placeholder="Имя Фамилия" type="text" name="username">
+        <label class="for-form" for="user-mail">Ваш email:</label>
+        <input class="input-form" id="user-mail" placeholder="email.example.com" type="text" name="mail">
+        <label class="for-form" for="user-text">Текст сообщения:</label>
+        <input class="input-form" id="user-text" placeholder="В свободной форме" type="text" name="text-mail">
+
+        <button type="submit" class="slider-button all-button slider-button-form">отправить</button>
+      </section>
     </form>
+
   </main>
   <footer>
     <div class="footer-main container">

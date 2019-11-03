@@ -18,9 +18,8 @@ h3, p {
     margin: 0;
 }
 
-button {
+.all-button {
     border: none;
-    box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
     border-radius: 5px;
 }
 
@@ -183,6 +182,7 @@ fieldset {
 }
 
 .services__title {
+    margin-top: 23px;
     font-size: 24px;
     line-height: 30px;
     color: #000000;
@@ -194,7 +194,7 @@ fieldset {
     font-size: 16px;
     line-height: 24px;
     display: block;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 0px;
 }
 
@@ -207,7 +207,7 @@ fieldset {
     padding: 18px 40px 18px 40px;
     border-radius: 5px;
     display: block;
-    margin-top: 45px;
+    margin-top: 30px;
     width: 80px;
 }
 
@@ -318,6 +318,7 @@ fieldset {
 .about-us__text {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 34px;
 }
 
 .about-us__subtitle {
@@ -325,11 +326,17 @@ fieldset {
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
+    margin-top: 37px;
 }
 
 .about-us__list-item {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 25px;
+}
+
+.about-us__list-item-percent {
+    margin-top: 20px;
 }
 
 .about-us__percent {
@@ -340,6 +347,7 @@ fieldset {
 }
 
 .about-us__percent-text {
+    margin-top: 35px;
     font-size: 16px;
     line-height: 18px;
 }
@@ -487,7 +495,7 @@ fieldset {
     height: 40px;
 }
 
-.browser-png:hover {
+.for-examples-item:hover .browser-png {
     opacity: 1;
 }
 
@@ -696,16 +704,14 @@ fieldset ul {
     position: absolute;
     left: 0px;
     top: 385px;
-
     opacity: 0;
 }
+
 .information-block:hover {
     position: absolute;
     left: 0px;
     top: 385px;
-
     opacity: 1;
-
     width: 360px;
     height: 163px;
     background-color: #e1e1e1;
@@ -755,6 +761,7 @@ fieldset ul {
     font-size: 16px;
     line-height: 1.12;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 input {
@@ -766,6 +773,7 @@ input {
     height: 50px;
     border: solid 2px #d7dcde;
     background-color: #ffffff;
+    margin-top: 10px;
 }
 
 .input-form:hover {
@@ -859,7 +867,29 @@ input {
 
 .round-button {
     box-shadow: none;
-    border-radius: 50px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    margin: 10px 8.5px;
+}
+
+.round-button_active {
+    position: relative;
+}
+
+.round-button_active:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border: 2px solid #c1c1c1;
+    display: block;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -3.5px;
+    margin-left: -4px;
+    position: absolute;
 }
 
 .img-phons {
@@ -885,7 +915,12 @@ input {
 }
 
 .map-container {
+    max-width: none;
     position: relative;
+}
+
+.map-picture {
+    width: 100%;
 }
 
 .map-marker {
@@ -893,6 +928,17 @@ input {
     left: 820px;
     top: 145px;
 }
+
 .picture-relative {
     position: relative;
+}
+
+.nerds-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-button-form {
+    width: 219px;
+    margin-top: 20px;
 }
