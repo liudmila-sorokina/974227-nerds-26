@@ -50,9 +50,15 @@
             <h2 class="visually-hidden">Фильтр</h2>
 
             <form class="filter" method="GET" action="https://nerds.html">
+              <div class="custom">
+                <div class="custom-relative">
+                  <div class="green-straight"></div> 
+                </div>
+                <button class="custom-button custom-button-begin">
+                </button>
+                <button class="custom-button custom-button-end"></button>
+              </div>
               <fieldset>
-                <legend class="filter-title">стоимость</legend>
-                <div class="range"><input type="range"></div>
                 <label for="from" class='filter-text-word'>от</label>
                 <input id="from" class='filter-text' type="input" name="from" value="0">
 
@@ -60,49 +66,44 @@
                 <input id="to" class='filter-text' vtype="input" name="to" value="15000">
 
               </fieldset>
-              <fieldset>
-
+              <fieldset class="filter-fieldset">
                 <legend class="filter-title">сетка:</legend>
-                <ul>
-                  <li>
-                    <input id="adaptiv" class="filter__item-radio" type="radio" name="grid" value="a1" checked>
+                <ul class="no-margin">
+                  <li class="filter__item-li">
+                    <input id="adaptiv" class="filter__item-radio visually-hidden" type="radio" name="grid" value="a1" checked>
                     <label for="adaptiv" class="filter__item">Адаптивная</label>
                   </li>
-                  <li>
-                    <input id="fixed" class="filter__item-radio" type="radio" name="grid" value="a2">
+                  <li class="filter__item-li">
+                    <input id="fixed" class="filter__item-radio visually-hidden" type="radio" name="grid" value="a2">
                     <label for="fixed" class="filter__item">Фиксированная</label>
                   </li>
-                  <li>
-                    <input id="rubber" class="filter__item-radio" type="radio" name="grid" value="a3">
+                  <li class="filter__item-li">
+                    <input id="rubber" class="filter__item-radio visually-hidden" type="radio" name="grid" value="a3">
                     <label for="rubber" class="filter__item">Резиновая</label>
                   </li>
                 </ul>
-
               </fieldset>
-
-
-              <fieldset>
-
+              <fieldset class="filter-fieldset">
                 <legend class="filter-title">особенности:</legend>
-                <ul>
-                  <li>
-                    <input id="slider" type="checkbox" name="slider" checked>
+                <ul class="no-margin">
+                  <li class="filter__item-li">
+                    <input class="filter__item-check visually-hidden" id="slider" type="checkbox" name="slider" checked>
                     <label for="slider" class="filter__item">Слайдер</label>
                   </li>
-                  <li>
-                    <input id="benefits-blok" type="checkbox" name="advantages">
+                  <li class="filter__item-li">
+                    <input class="filter__item-check visually-hidden" id="benefits-blok" type="checkbox" name="advantages">
                     <label for="benefits-blok" class="filter__item">Блок преимуществ</label>
                   </li>
-                  <li>
-                    <input id="news" type="checkbox" name="news" checked>
+                  <li class="filter__item-li">
+                    <input class="filter__item-check visually-hidden" id="news" type="checkbox" name="news" checked>
                     <label for="news" class="filter__item">Новости</label>
                   </li>
-                  <li>
-                    <input id="gallery" type="checkbox" name="gallery">
+                  <li class="filter__item-li">
+                    <input class="filter__item-check visually-hidden" id="gallery" type="checkbox" name="gallery">
                     <label for="gallery" class="filter__item">Галерея</label>
                   </li>
-                  <li>
-                    <input id="bag" type="checkbox" name="basket">
+                  <li class="filter__item-li">
+                    <input class="filter__item-check visually-hidden" id="bag" type="checkbox" name="basket">
                     <label for="bag" class="filter__item">Корзина</label>
                   </li>
                 </ul>
@@ -117,11 +118,11 @@
               <section class="product-selection">
                 <h3 class="filter-title filter-subtitle">сортировать</h3>
                 <ul class="catalog__filters">
-                  <li class="catalog__filter-item _chosen"><button tabindex="1">по цене</button></li>
-                  <li class="catalog__filter-item"><button tabindex="2">по типу</button></li>
-                  <li class="catalog__filter-item"><button tabindex="3">по названию</button></li>
+                  <li class="catalog__filter-item chosen"><button class="all-button" tabindex="1">по цене</button></li>
+                  <li class="catalog__filter-item"><button class="all-button" tabindex="2">по типу</button></li>
+                  <li class="catalog__filter-item"><button class="all-button" tabindex="3">по названию</button></li>
                 </ul>
-                <button type="button" class="arrow all-button"><img src="img/icon-down-dir.svg"
+                <button type="button" class="arrow all-button chosen"><img src="img/icon-down-dir.svg"
                     alt="стрелка вниз"></button>
                 <button type="button" class="arrow all-button"><img src="img/icon-up-dir.svg"
                     alt="стрелка вверх"></button>
@@ -222,15 +223,29 @@
         <button class="slider-button address-button all-button">напишите нам</button>
       </div>
     </section>
+    
+    
     <form action="https://nerds.ru" method="get" class="personal-data">
       <section class="nerds-form">
-        <h3 class="about-us__title">Напишите нам</h3>
-        <label class="for-form" for="user-name">Ваше имя:</label>
-        <input class="input-form invalid" id="user-name" placeholder="Имя Фамилия" type="text" name="username">
-        <label class="for-form" for="user-mail">Ваш email:</label>
-        <input class="input-form" id="user-mail" placeholder="email.example.com" type="text" name="mail">
-        <label class="for-form" for="user-text">Текст сообщения:</label>
-        <input class="input-form" id="user-text" placeholder="В свободной форме" type="text" name="text-mail">
+        <div class="about-us__header">
+          <h3 class="about-us__title">Напишите нам</h3>
+          <button class="close-cross all-button" type="button"><img src="img/close-cross.svg"></button>
+        </div>
+        <div class="about-us__horizontal-container">
+          <div>
+            <label class="for-form" for="user-name">Ваше имя:</label>
+            <input class="input-form invalid" id="user-name" placeholder="Имя Фамилия" type="text" name="username">
+          </div>
+          <div>
+            <label class="for-form" for="user-mail">Ваш email:</label>
+            <input class="input-form" id="user-mail" placeholder="email.example.com" type="text" name="mail">
+          </div>
+        </div>
+        <div class="about-us__vertical-container">
+          <label class="for-form" for="user-text">Текст сообщения:</label>
+          <textarea class="input-form input-form__textarea" id="user-text" placeholder="В свободной форме" name="text-mail"></textarea>
+        </div>
+    
 
         <button type="submit" class="slider-button all-button slider-button-form">отправить</button>
       </section>
