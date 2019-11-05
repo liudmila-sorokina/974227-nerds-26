@@ -28,7 +28,7 @@
 
       <ul class="menu">
         <li>
-          <a href="bag.html" class="menu__item menu__item_cart menu__item_active"><span>корзина</span></a>
+          <a href="bag.html" class="menu__item menu__item_cart"><span>корзина</span></a>
         </li>
 
       </ul>
@@ -50,9 +50,10 @@
             <h2 class="visually-hidden">Фильтр</h2>
 
             <form class="filter" method="GET" action="https://nerds.html">
+              <div class="filter-title filter-title-custom-cost">Стоимость:</div>
               <div class="custom">
                 <div class="custom-relative">
-                  <div class="green-straight"></div> 
+                  <div class="green-straight"></div>
                 </div>
                 <button class="custom-button custom-button-begin">
                 </button>
@@ -70,7 +71,8 @@
                 <legend class="filter-title">сетка:</legend>
                 <ul class="no-margin">
                   <li class="filter__item-li">
-                    <input id="adaptiv" class="filter__item-radio visually-hidden" type="radio" name="grid" value="a1" checked>
+                    <input id="adaptiv" class="filter__item-radio visually-hidden" type="radio" name="grid" value="a1"
+                      checked>
                     <label for="adaptiv" class="filter__item">Адаптивная</label>
                   </li>
                   <li class="filter__item-li">
@@ -91,7 +93,8 @@
                     <label for="slider" class="filter__item">Слайдер</label>
                   </li>
                   <li class="filter__item-li">
-                    <input class="filter__item-check visually-hidden" id="benefits-blok" type="checkbox" name="advantages">
+                    <input class="filter__item-check visually-hidden" id="benefits-blok" type="checkbox"
+                      name="advantages">
                     <label for="benefits-blok" class="filter__item">Блок преимуществ</label>
                   </li>
                   <li class="filter__item-li">
@@ -122,10 +125,12 @@
                   <li class="catalog__filter-item"><button class="all-button" tabindex="2">по типу</button></li>
                   <li class="catalog__filter-item"><button class="all-button" tabindex="3">по названию</button></li>
                 </ul>
-                <button type="button" class="arrow all-button chosen"><img src="img/icon-down-dir.svg"
-                    alt="стрелка вниз"></button>
-                <button type="button" class="arrow all-button"><img src="img/icon-up-dir.svg"
-                    alt="стрелка вверх"></button>
+                <div class='arrows-container'>
+                  <button type="button" class="arrow all-button chosen"><img src="img/icon-down-dir.svg"
+                      alt="стрелка вниз"></button>
+                  <button type="button" class="arrow all-button"><img src="img/icon-up-dir.svg"
+                      alt="стрелка вверх"></button>
+                </div>
               </section>
             </section>
             <section class="catalog__items">
@@ -203,7 +208,7 @@
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
-                <li class="pagination-item"><a href="#">следующая</a></li>
+                <li class="pagination-item pagination-item-next"><a href="#">следующая</a></li>
               </ul>
             </section>
           </section>
@@ -223,8 +228,8 @@
         <button class="slider-button address-button all-button">напишите нам</button>
       </div>
     </section>
-    
-    
+
+
     <form action="https://nerds.ru" method="get" class="personal-data">
       <section class="nerds-form">
         <div class="about-us__header">
@@ -243,9 +248,10 @@
         </div>
         <div class="about-us__vertical-container">
           <label class="for-form" for="user-text">Текст сообщения:</label>
-          <textarea class="input-form input-form__textarea" id="user-text" placeholder="В свободной форме" name="text-mail"></textarea>
+          <textarea class="input-form input-form__textarea" id="user-text" placeholder="В свободной форме"
+            name="text-mail"></textarea>
         </div>
-    
+
 
         <button type="submit" class="slider-button all-button slider-button-form">отправить</button>
       </section>
@@ -268,9 +274,7 @@
     </div>
   </footer>
 
-  <section>
-    <button type="button"><img class="close-cross" src="img/close-cross.svg"></button>
-  </section>
+
 
 </body>
 
