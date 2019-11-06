@@ -145,6 +145,7 @@ fieldset {
   text-transform: uppercase;
   border: none;
   background-color: #fb565a;
+  width: 133px;
 }
 
 .slider-button:hover {
@@ -522,6 +523,8 @@ fieldset {
   padding: 16px 60px 16px 60px;
   background-color: #fb565a;
   text-transform: uppercase;
+  width: 80px;
+  margin-left: 80px;
 }
 
 .examples__prise:hover {
@@ -930,6 +933,8 @@ input {
 
 .img-phons {
   background-color: #eeeeee;
+  width: 698px;
+  height: 413px;
 }
 
 .product-selection {
@@ -964,6 +969,8 @@ input {
   position: absolute;
   left: 820px;
   top: 145px;
+  width: 231px;
+  height: 190px;
 }
 
 .picture-relative {
@@ -1130,4 +1137,53 @@ input {
 .filter-title-custom-cost {
   padding-bottom: 46px;
   margin-top: -18px;
+}
+.nerds-logo-svg {
+  width: 160px;
+  height: 67px;
+}
+.img-arrow {
+  width: 11px;
+  height: 10px;
+}
+.img-different-jpg {
+  width: 360px;
+  height: 576px;
+}
+.map-map {
+  width: 1440px;
+  height: 419px;
+}
+.all-icon-svg {
+  width: 21px;
+  height: 21px;
+  padding-top: 29px;
+}
+.index-illustrations {
+  width: 300px;
+  height: 146px;
+}
+.index-big-logo {
+  width: 360px;
+  height: 208px;
+}
+.white-black-logo-1 {
+  width: 199px;
+  height: 68px;
+}
+.white-black-logo-2 {
+  width: 209px;
+  height: 90px;
+}
+.white-black-logo-3 {
+  width: 185px;
+  height: 52px;
+}
+.white-black-logo-4 {
+  width: 173px;
+  height: 84px;
+}
+.cross-close-svg {
+  width: 21px;
+  height: 21px;
 }
